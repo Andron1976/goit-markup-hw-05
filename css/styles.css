@@ -97,6 +97,7 @@ img {
 .head-names {
   color: var(--title-text-color);
   text-decoration: none;
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .head-names:hover,
@@ -127,6 +128,7 @@ img {
   margin: 0;
   display: flex;
   align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contact-head:hover,
@@ -210,6 +212,7 @@ fill: var(--specific-color);}
   height: 30px;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close::before,
@@ -391,6 +394,7 @@ h3 {
   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-icon {
   width: 106px;
@@ -451,6 +455,7 @@ h3 {
 .advertising-block {
   margin-top: 30px;
   width: 370px;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .advertising-block:hover,
 .advertising-block:focus {
@@ -473,7 +478,7 @@ h3 {
   height: 100%;
   padding: 63px 24px;
   background-color: rgba(33, 150, 243, 0.9);
-  transition: 500ms;
+  transition: top 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .advertising-block:hover .advertising-image-capture {
@@ -541,6 +546,7 @@ h3 {
   line-height: 1.71;
   margin-bottom: 9px;
   margin-top: 20px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-mail-contact {
   margin-bottom: 9px;
@@ -551,6 +557,7 @@ h3 {
   font-size: 14px;
   line-height: 1.71;
   text-decoration: none;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address-footer:hover,
@@ -584,6 +591,7 @@ h3 {
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
   margin-right: 10px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .socials-link:hover {
   background-color: var(--specific-color);
@@ -595,6 +603,7 @@ h3 {
 
 .gray-img {
     fill: #AFB1B8;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 .socials-link:hover .gray-img,
 .socials-link:focus .gray-img {
