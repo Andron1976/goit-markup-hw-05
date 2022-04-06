@@ -19,7 +19,7 @@ html {
 }
 body {
   color: var(--primary-text-color);
-  background: var(--primary-bg-color);
+  background-color: var(--primary-bg-color);
   font-family: Roboto, sans-serif;
 }
 .list {
@@ -40,7 +40,7 @@ img {
   width: 1170px;
 }
 .header {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   border-bottom: 1px solid #ececec;
   padding: 25px 0;
 }
@@ -148,7 +148,7 @@ fill: var(--specific-color);}
 }
 .button-primary {
   color: var(--accent-color);
-  background: var(--specific-color);
+  background-color: var(--specific-color);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88px;
@@ -228,7 +228,7 @@ h3 {
   padding: 0px;
 }
 .team-section {
-  background: var(--specific-bg-color);
+  background-color: var(--specific-bg-color);
 }
 .team-card {
   box-shadow: 0px 2px 1px 0px #00000033,
@@ -247,7 +247,7 @@ h3 {
   padding: 0px;
 }
 .team-content {
-  background: var(--accent-color);
+  background-color: var(--accent-color);
   padding-top: 30px;
   padding-bottom: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -309,45 +309,30 @@ h3 {
 }
 
 .button-element {
-  background: var(--specific-bg-color);
+  background-color: var(--specific-bg-color);
   color: var(--title-text-color);
   border: 1px solid var(--specific-bg-color);
   font-size: 16px;
   font-weight: 500;
   line-height: 1.63;
   cursor: pointer;
-  border-radius: 4px;
   padding: 6px 22px;
   height: 38px;
   margin-right: 8px;
 
-  transition: background 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .button-element:hover,
 .button-element:focus {
   color: var(--accent-color);
-  background: var(--specific-color);
+  background-color: var(--specific-color);
   box-shadow: 0px 2px 2px 0px #0000001F,
   0px 1px 2px 0px #00000014,
   0px 3px 1px 0px #0000001A;
+  border-radius: 4px;
   border: none;
 }
-
-.advertising-block {
-  margin-top: 30px;
-}
-.advertising-block:hover,
-.advertising-block:focus {
-  box-shadow: 1px 4px 6px 0px #00000029,
-  0px 4px 4px 0px #0000000F,
-  0px 1px 1px 0px #0000001F;
-}
-.advertising-content {
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
-  border-right: 1px solid #eeeeee;
-  padding: 20px 24px;
-}
+/*advertising-section*/
 .advertising-section {
   display: flex;
   flex-wrap: wrap;
@@ -355,6 +340,52 @@ h3 {
   padding: 0;
   margin: 0;
 }
+.advertising-block {
+  margin-top: 30px;
+  width: 370px;
+}
+.advertising-block:hover,
+.advertising-block:focus {
+  box-shadow: 1px 4px 6px 0px #00000029,
+  0px 4px 4px 0px #0000000F,
+  0px 1px 1px 0px #0000001F;
+}
+.advertising-image {
+  height: 294px;
+  position: relative;
+  overflow: hidden;
+}
+.advertising-image-capture {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  transition: 500ms;
+}
+
+.advertising-block:hover .advertising-image-capture {
+  top: 0%;
+}
+.advertising-image-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.56;
+  color: var(--accent-color);
+}
+  
+
+.advertising-content {
+  border-bottom: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-right: 1px solid #eeeeee;
+  padding: 20px 24px;
+}
+
 .advertising-name {
   color: var(--title-text-color);
   font-size: 18px;
